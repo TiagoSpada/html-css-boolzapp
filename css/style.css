@@ -113,4 +113,31 @@ body {
     body {
         background-color: red;
     }
+
+    .container {
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .col-left {
+        width: 15%;
+    }
+
+    .col-right {
+        width: 85%;
+    }
+
+    .notification-on{
+        display: none;
+    }
+
+    .saerch {
+        display: none;
+    }
+
+    .contact-section {
+        height: 90%;
+    }
+
+
 }
