@@ -9,6 +9,7 @@
 body {
     height: 100vh;
     display: flex;
+    overflow: scroll;
 }
 
 .container {
@@ -63,6 +64,7 @@ body {
 .profile-contact {
     background-color: yellow;
     height: 10%;
+    border-left: 1px solid black;
 }
 
 .chat {
@@ -108,8 +110,8 @@ body {
 
 /* TABLET */
 
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 992px) {
+
     body {
         background-color: red;
     }
@@ -117,6 +119,11 @@ body {
     .container {
         width: 100vh;
         height: 100vh;
+        margin: 0;
+    }
+
+    .row {
+        width: 100vw;
     }
 
     .col-left {
@@ -139,5 +146,16 @@ body {
         height: 90%;
     }
 
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+    .col-left {
+        display: none;
+    }
+
+    .col-right {
+        width: 100%;
+    }
 
 }
