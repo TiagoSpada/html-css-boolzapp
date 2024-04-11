@@ -1,5 +1,116 @@
+/* DESKTOP FIRST */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.col-left {
+    background-color: blue;
+    width: 30%;
+    height: 100%;
+}
+
+.col-right {
+    background-color: green;
+    width: 70%;
+    height: 100%;
+}
+
+.profile {
+    background-color: yellow;
+    height: 10%;
+}
+
+.notification-on {
+    background-color: lightblue;
+    height: 10%;
+}
+
+.saerch {
+    background-color: silver;
+    height: 5%;
+}
+
+.contact-section {
+    height: 75%;
+    overflow: scroll;
+}
+
+.contact {
+    min-height: 15%;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.profile-contact {
+    background-color: yellow;
+    height: 10%;
+}
+
+.chat {
+    background-color: pink;
+    height: 80%;
+    overflow: scroll;
+    padding: 5%;
+}
+
+
+.type-message {
+    background-color: darkkhaki;
+    height: 10%;
+}
+
+.my-message {
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.my-message div{
+    width: 60%;
+    height: 200px;
+    background-color: lightgreen;
+    margin-bottom: 2rem;
+    
+}
+
+.contact-message {
+    width: 100%;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contact-message div{
+    width: 60%;
+    height: 200px;
+    background-color: white;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 768px)
+{
+    body {
+        background-color: red;
+    }
 }
