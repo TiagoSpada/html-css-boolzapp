@@ -4,39 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <div id="app" class="container">
         <div class="row">
-            <div class="col-left">
-                <div class="profile"></div>
-                <div class="notification-on"></div>
-                <div class="saerch"></div>
-                <div class="contact-section">
-                    <div class="contact"></div>
-                    <div class="contact"></div>
-                    <div class="contact"></div>
-                    <div class="contact"></div>
-                    <div class="contact"></div>
-                    <div class="contact"></div>
-                    <div class="contact"></div>
-                    <div class="contact"></div>
+            <div class="sidebar">
+                <header>
+                        <img src="./img/avatar_1.jpg" alt="" class="img-profile">
+                        <div>
+                            <i class="fas fa-circle-notch"></i>
+                            <i class="fas fa-message"></i>
+                            <i class="fas fa-ellipsis-vertical"></i>
+                        </div>
+                </header>
+                <div class="notification-on">
+                    <i class="fas fa-bell-slash"></i>
+                    <div>
+                        Ricevi notifiche di nuovi messaggi
+                        <br><a href="">Attiva notifiche desktop</a>
+                    </div>
                 </div>
+                <div class="saerch">
+                    <input type="search" name="search" placeholder="Cerca o inizia una nuova chat">
+                </div>
+                <ul class="chats">
+                    <li>
+                        <img src="./img/avatar_2.jpg" alt="" class="img-profile">
+                        <div>
+                            Fabio<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_3.jpg" alt="" class="img-profile">
+                        <div>
+                            Michele<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_4.jpg" alt="" class="img-profile">
+                        <div>
+                            Samuele<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_5.jpg" alt="" class="img-profile">
+                        <div>
+                            Alessandro B.<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_6.jpg" alt="" class="img-profile">
+                        <div>
+                            Claudia<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_7.jpg" alt="" class="img-profile">
+                        <div>
+                            Federico<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_8.jpg" alt="" class="img-profile">
+                        <div>
+                            Marco<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_1.jpg" alt="" class="img-profile">
+                        <div>
+                            Davide<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_6.jpg" alt="" class="img-profile">
+                        <div>
+                            Giovanna<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_8.jpg" alt="" class="img-profile">
+                        <div>
+                            Riccardo<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_6.jpg" alt="" class="img-profile">
+                        <div>
+                            Marta<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_5.jpg" alt="" class="img-profile">
+                        <div>
+                            Simone<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_4.jpg" alt="" class="img-profile">
+                        <div>
+                            Lorenzo<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/avatar_2.jpg" alt="" class="img-profile">
+                        <div>
+                            Giacomo<br>
+                            <span>Lorem ipsum, dolor sit amet</span>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
-            <div class="col-right">
-                    <div class="profile-contact"></div>
-                    <div class="chat">
-                        <div class="my-message">
+            <div class="content">
+                <header></header>
+                <div class="conversation">
+                    <ul>
+                        <li class="right"><div>messaggio</div></li>
+                        <li class="left"><div>messaggio</div></li>
+                        <li class="left"><div>messaggio</div></li>
+                        <li class="right"><div>messaggio</div></li>
+                    </ul>
+                        <!-- <div class="my-message">
                             <div></div>
                         </div>
                         <div class="contact-message">
                             <div></div>
-                        </div>
-                    </div>
-                    <div class="type-message">
+                        </div> -->
+                </div>
+                <div class="message">
                         <div></div>
-                    </div>
                 </div>
             </div>
         </div>
