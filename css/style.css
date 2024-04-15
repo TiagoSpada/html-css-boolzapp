@@ -9,14 +9,14 @@
 body {
     height: 100vh;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", sans-serif;    
     background: linear-gradient(
-    to top,
-    #dcdbd4 0%,
-    #dcdbd4 85%,
-    #009688 50%,
-    #009688 100%
-  );
+        to top,
+        #dcdbd4 0%,
+        #dcdbd4 85%,
+        #009688 50%,
+        #009688 100%
+    );
 }
 
 .container {
@@ -50,6 +50,7 @@ header {
     height: 70px;
     flex-shrink: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -58,14 +59,14 @@ header {
 }
 
 header div {
-    text-align: right;
-    flex-grow: 1;
-    margin: 0 1rem;
-    color: #b1b1b1;
     font-size: 17px;
+    margin: 0 1rem;
 }
 
-header div i{
+header .icon i{
+    text-align: right;
+    color: #b1b1b1;
+    font-size: 20px;
     margin: 0 5px;
 }
 
@@ -111,7 +112,7 @@ header div i{
 }
 
 .saerch input[type=search] {
-    padding: 5px;
+    padding: 10px;
     font-size: 13px;
     width: 100%;
 }
@@ -123,23 +124,23 @@ header div i{
 
 .chats li {
     background-color: white;
-    border: 1px solid #b1b1b1;
+    border: 0.5px solid #dbdada;
     padding: 10px;
 }
 
-.chats li div {
+.name {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
 }
 
-.chats li div span{
+.name span{
     color:#b1b1b1;
     font-size: 14px;
 }
 
 .conversation {
-    background-color: pink;
+    background-image: url('../img/mine.jpg');
     height: calc(100% - 140px);
     overflow-y: scroll;
 }
@@ -160,6 +161,7 @@ header div i{
     width: 60%;
     padding: 1rem;
     display: inline-block;
+    border-radius: 10px;
 }
 
 .right {
@@ -169,7 +171,7 @@ header div i{
 .right div {
     display: inline-block;
     text-align: left;
-    background-color: lightgreen;
+    background-color: #d4f9bb;
 }
 
 .left {
@@ -181,27 +183,52 @@ header div i{
 }
 
 .message {
-    background-color: darkkhaki;
+    background-color: #f3eeeb;
     height: 70px;
     flex-shrink: 0;
+}
+
+.message ul {
+    list-style-type: none;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message li {
+    color: #6b7376;
+    margin: auto;
+}
+
+.message li i{
+    font-size: 30px;
+}
+
+#type-message{
+    width: 80%;
+}
+.message li input[type=text] {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
 }
 
 
 /* TABLET */
 
 @media screen and (max-width: 992px) {
-
     body {
-        background-color: red;
+        background: none;
     }
-
+    
     .container {
         width: 100%;
         height: 100%;
         margin: 0;
     }
 
-    header div {
+    .sidebar header .icon {
         display: none;
     }
 
@@ -233,6 +260,10 @@ header div i{
 
     .content {
         width: 100%;
+    }
+
+    .content header .icon {
+        display: none;
     }
 
 }
